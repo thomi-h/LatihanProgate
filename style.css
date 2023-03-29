@@ -1,0 +1,148 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-wrapper {
+  position: relative;
+}
+
+.container {
+  max-width: 1000px !important;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 2em 0;
+}
+
+.even {
+  background-color: #eee;
+}
+
+.row {
+  display: flex;
+}
+
+.nav-bar,
+footer {
+  padding: 1em;
+  background-color: #333;
+}
+
+.nav-link {
+  display: none;
+}
+
+.logo > a,
+.nav-item > a,
+div > a {
+  color: #fff;
+}
+
+.nav-bar,
+.hamburger {
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 2;
+}
+
+.hamburger {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.sidebar {
+  background-color: #333;
+  padding-bottom: 1rem;
+  translate: -100%;
+  opacity: 0;
+  transition: all 500ms;
+  z-index: -1;
+}
+
+.hamburger:has(input:checked) + .sidebar {
+  translate: 0;
+  opacity: 1;
+}
+
+.main-wrapper {
+  padding: 2em;
+}
+
+.main-title {
+  font-size: 4rem;
+}
+
+.main-title span {
+  color: rgb(245, 240, 0);
+}
+
+.main-subtitle {
+  font-weight: 200;
+}
+
+.ninja-ken {
+  max-width: 200px;
+}
+
+.img-gallery img {
+  margin-bottom: 1em;
+}
+
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  margin: 1em auto;
+  padding: 1em 0.9em;
+  border: 0.5px solid #ddd;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: 2px solid #bbb;
+}
+
+form button {
+  background-color: lemonchiffon;
+  border: none;
+}
+
+.nav-item {
+  margin: 0.5em 0;
+}
+
+/* .logo {
+  display: flex;
+  align-items: center;
+} */

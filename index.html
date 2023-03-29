@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <title>Latihan HTML dan CSS</title>
+  </head>
+  <body>
+    <div class="nav-wrapper">
+      <nav class="nav-bar row">
+        <div class="logo"><a href="#">NINJA KEN</a></div>
+        <div class="nav-link">
+          <ul>
+            <li class="nav-item"><a href="#tentang-saya">Tentang Saya</a></li>
+            <li class="nav-item"><a href="#proyek-contoh">Proyek Contoh</a></li>
+            <li class="nav-item"><a href="#hubungi-saya">Hubungi Saya</a></li>
+          </ul>
+        </div>
+      </nav>
+      <label class="hamburger">
+        <input type="checkbox">
+      </label>
+      <aside class="sidebar">
+        <nav>
+          <div>
+            <a href="#tentang-saya">Tentang Saya</a>
+          </div>
+          <div class="nav-item">
+            <a href="#proyek-contoh">Proyek Contoh</a>
+          </div>
+          <div class="nav-item">
+            <a href="#hubungi-saya">Hubungi Saya</a>
+          </div>
+        </nav>
+      </aside>
+    </div>
+    <main class="container main-wrapper">
+      <h1 class="main-title">NINJA KEN<span class="main-yellow">.</span></h1>
+      <h2 class="main-subtitle">MY PORTFOLIO</h2>
+      <img class="ninja-ken" src="./src/Ninja Ken.jpeg" alt="Ninja Ken" />
+    </main>
+    <div class="even">
+    <section class="container content">
+      <h2 class="section-subtitle" id="tentang-saya">Tentang Saya</h2>
+      <p class="section-article">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid in
+        maxime saepe natus provident inventore fugiat porro doloremque omnis ex
+        quia veniam accusamus, itaque ab consequuntur sint quo! Explicabo,
+        natus. Molestias id deleniti esse optio veniam cupiditate omnis incidunt
+        ad eveniet illum ratione dolorum quia, inventore adipisci, et, unde
+        aliquam accusamus eligendi explicabo facilis voluptatum est at
+        blanditiis sit! Provident.
+      </p>
+    </section>
+    </div>
+    <section class="container content">
+      <h2 class="section-subtitle" id="proyek-contoh">Proyek Contoh</h2>
+      <div class="img-gallery">
+        <img src="./src/1.jpeg" alt="img1" />
+        <img src="./src/2.jpeg" alt="img2" />
+        <img src="./src/3.jpeg" alt="img3" />
+      </div>
+    </section>
+    <div class="even">
+    <section class="container content">
+      <h2 class="section-subtitle" id="hubungi-saya">Hubungi Saya</h2>
+      <form action="">
+        <input type="email" placeholder="Email (Diperlukan)" />
+        <textarea name="" id="" placeholder="Message (Diperlukan)"></textarea>
+        <button class="submit-buttom">Kirim</button>
+      </form>
+      </div>
+    </section>
+    <footer class="footer-wrapper">
+      <div class="logo"><a href="#">NINJA KEN</a></div>
+      <div class="footer-nav-link">
+        <ul>
+          <li class="nav-item"><a href="#tentang-saya">Tentang Saya</a></li>
+          <li class="nav-item"><a href="#proyek-contoh">Proyek Contoh</a></li>
+          <li class="nav-item"><a href="#hubungi-saya">Hubungi Saya</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
